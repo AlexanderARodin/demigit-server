@@ -7,7 +7,6 @@ help:
 pull:
 	@git pull
 
-
 savetogit: git.addall git.commit git.push
 
 git.addall:
