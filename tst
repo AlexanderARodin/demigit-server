@@ -1,7 +1,9 @@
 #!/bin/sh
+set -e
 
-echo 'there is no help (yet)..'
+echo '-->'
 
+cd ../repos/
 ls -lAh
 
 if tty -s
