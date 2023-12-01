@@ -2,6 +2,11 @@
 help:
 	@cat Makefile
 
+test:
+	@./tst
+edit:
+	@nvim tst
+
 
 pull:
 	@git pull
