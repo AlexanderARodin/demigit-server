@@ -1,2 +1,2 @@
-# demigit-server
-Makefile scripting for a few automations with own gir-server
+# git-shell-commands
+Makefile scripting for a few automations with own git-server
