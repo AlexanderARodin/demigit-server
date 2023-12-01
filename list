@@ -3,13 +3,8 @@ set -e
 
 cd ../repos/
 
-if [ "$1" = '--all' ]; then
-	for item in *
-	do
-		case "$item" in
-		*) echo "$item" ;;
-		esac
-	done
+if [ "$1" = '--full' ]; then
+	ls -lcAh
 else
 	print_if_bare_repo='
 		if "$(git --git-dir="$1" rev-parse --is-bare-repository)" = true
