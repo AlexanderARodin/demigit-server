@@ -1,12 +1,7 @@
 #!/bin/sh
 set -e
 
-PARENT=$(dirname "$0")
-echo $(pwd)
-
-exit
-
-
+PARENT=$(pwd)
 cd $PARENT/repos/
 
 if [ -z "$1" ]; then
