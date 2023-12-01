@@ -2,7 +2,7 @@
 set -e
 
 cd "$(dirname "$0")"
-cd -P ../gitDir/repos/
+cd ../repos/
 
 if [ -z "$1" ]; then
 	echo 'hint: give repository name'
@@ -10,4 +10,4 @@ if [ -z "$1" ]; then
 fi
 
 prefix=$(date '+%Y-%m-%d-%H:%M:%S')
-mv ./$1 "../trash/$prefix - $1"
+mv ./$1 "../repo-trash/$prefix - $1"
