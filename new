@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+cd ../repos/
+
+if [ -z "$1" ]; then
+	echo 'hint: give repository name'
+	exit 1
+fi
+
+mkdir -v $1
+chmod g+w $1
+
+cd $1
+git init --bare
+chmod -R g+w *
