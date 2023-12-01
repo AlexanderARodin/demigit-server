@@ -5,11 +5,11 @@ Makefile scripting for a few automations with own git-server
 https://github.com/git/git/tree/master/contrib/git-shell-commands
 
 ## requirements
-  - parent directory of this repo should contain directory (or simlink) **gitDir**
-  - **gitDir** should contain following directories:
-    - **repos** is root for manadged repos
-    - **trash** for deleted repos
-    - **repo-template** is **NOT**-bare repo for creating *pre-initialized* repos
+  - this repo should be located in home directory of git-user (**/home/git** for instance)
+  - git-user home directory should contain following directories (or simlinks):
+    - **repos** for manadged repos
+    - **repo-trash** for deleted repos
+    - **NOT**-bare repo **repo-template** for creating *pre-initialized* repos
    
 ## usage
   - help show simple command list
