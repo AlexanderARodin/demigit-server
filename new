@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
 
-cd "$(dirname "$0")"
-cd ../repos/
+PARENT=$(dirname $(dirname "$0"))
+cd $PARENT/repos/
 
 if [ -z "$1" ]; then
 	echo 'hint: give repository name'
@@ -13,6 +13,6 @@ mkdir -v $1
 chmod g+w $1
 
 
-git clone --bare --local --no-hardlinks ../repo-template -- $1
+git clone --bare --local --no-hardlinks $PARENT/repo-template -- $1
 cd $1
 chmod -R g+w *
