@@ -9,9 +9,9 @@ if [ -z "$1" ]; then
 	exit 1
 fi
 
-mkdir -v $1
-chmod g+w $1
+mkdir -v ./$1
+chmod g+w ./$1
 
-git init --bare $1
-cd $1
+git init --bare ./$1
+cd ./$1
 chmod -R g+w *
