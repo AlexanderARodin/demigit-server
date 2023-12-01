@@ -2,7 +2,7 @@
 set -e
 
 cd "$(dirname "$0")"
-cd -P ../repos/
+cd -P ../gitDir/repos/
 
 if [ "$1" = '--full' ]; then
 	ls -lcAh
