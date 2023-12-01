@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+cd "$(dirname "$0")"
+cd -P ../repos/
+
+if [ -z "$1" ]; then
+	echo 'hint: give source repository name'
+	exit 1
+fi
+if [ -z "$2" ]; then
+	echo 'hint: give new repository name'
+	exit 1
+fi
+
+cp ./$1 ./$2
