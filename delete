@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+cd "$(dirname "$0")"
+cd -P ../repos/
+
+if [ -z "$1" ]; then
+	echo 'hint: give repository name'
+	exit 1
+fi
+
+prefix=$(date '+%Y-%m-%d-%H:%M:%S')
+mv ./$1 "../trash/$prefix - $1"
