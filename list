@@ -2,7 +2,7 @@
 set -e
 
 cd "$(dirname "$0")"
-cd ../repos/
+cd -P ../repos/
 
 if [ "$1" = '--full' ]; then
 	ls -lcAh

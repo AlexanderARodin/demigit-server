@@ -2,7 +2,7 @@
 set -e
 
 cd "$(dirname "$0")"
-cd ../repos/
+cd -P ../repos/
 
 if [ -z "$1" ]; then
 	echo 'hint: give repository name'
@@ -12,6 +12,7 @@ fi
 mkdir -v $1
 chmod g+w $1
 
+
+git clone --bare --local ../repo-template -- $1
 cd $1
-git init --bare
 chmod -R g+w *
