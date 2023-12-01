@@ -1,5 +1,7 @@
 #!/bin/sh
 
+echo 'let`s start..'
+
 if tty -s
 then
 	echo "Run 'help' for help, or 'exit' to leave.  Available commands:"
