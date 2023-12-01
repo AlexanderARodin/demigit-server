@@ -2,7 +2,7 @@
 set -e
 
 cd "$(dirname "$0")"
-cd -P ../gitDir/repos/
+cd ../repos/
 
 if [ -z "$1" ]; then
 	echo 'hint: give repository name'
