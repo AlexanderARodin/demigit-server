@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
 
-cd "$(dirname "$0")"
-cd ../repos/
+PARENT=$(dirname "$0")
+cd $PARENT/repos/
 
 if [ "$1" = '--full' ]; then
 	ls -lcAh
