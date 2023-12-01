@@ -1,1 +1,1 @@
-../scripts/tst
+echo '??'
