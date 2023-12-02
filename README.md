@@ -1,8 +1,5 @@
 # git-shell-commands
-Basic scripting for a few automations with own git-server
-
-### based on source 
-https://github.com/git/git/tree/master/contrib/git-shell-commands
+Basic scripting for a few automations with own git-server. Based on [source](https://github.com/git/git/tree/master/contrib/git-shell-commands).
 
 ## requirements
   - this repo should be located in home directory of git-user (**/home/git** for instance)
