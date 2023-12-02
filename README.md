@@ -1,7 +1,11 @@
 # git-shell-commands
-Basic scripting for a few automations with own git-server. Based on [source](https://github.com/git/git/tree/master/contrib/git-shell-commands).
+Basic scripting for a few automations with own git-server with coupling with **git-shell**.
+Based on [source](https://github.com/git/git/tree/master/contrib/git-shell-commands).
 
 ## requirements
+  - pre-installed **git-core**
+  - created git-user (**git** for instance)
+  - git-user have to be configured logining under **git-shell**
   - this repo should be located in home directory of git-user (**/home/git** for instance)
   - git-user home directory should contain following directories (or simlinks):
     - **repos** for manadged repos
